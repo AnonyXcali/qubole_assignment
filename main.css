@@ -1,4 +1,4 @@
- @import url('https://fonts.googleapis.com/css?family=Lato:300,400,900');
+  @import url('https://fonts.googleapis.com/css?family=Montserrat:700');
 
 
 html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video {
@@ -9,8 +9,41 @@ html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquot
     font-size: 100%;
     vertical-align: baseline;
     background: transparent;
-    font-family: 'Lato', sans-serif;
+
+
+    font-family: 'Montserrat', sans-serif;
+
     
 }
 
+
+@media only screen and (min-width : 1280px){
+ #appArea{
+     height:100%;
+     width:100%;
+     display:grid;
+     grid-template-rows: repeat(100,20px);
+grid-template-columns: repeat(64,20px);
+     
+}   
+    .appName{
+        grid-row:4/8;
+    grid-column: 6/10;
+    }
+.appName h1{
+    /* NotePad App: */
+font-size: 64px;
+color: #11DC42;
+    
+    } 
+    
+    .dash{
+        height:15px;
+        width:100px;
+        background-color: #333734;
+        grid-row:10/10;
+        grid-column: 14/20;
+    }
+    
+}
 
