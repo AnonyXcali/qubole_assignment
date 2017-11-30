@@ -1,0 +1,16 @@
+<!--
+     <div class="notes">
+         <div id="title">
+             Title Here
+         </div>
+         <div class="contentArea">
+            <p> dlkajs lkjasd dlkajs lkjasd dlkajs lkjasd dlkajs lkjasd dlkajs lkjasd dlkajs lkjasd dlkajs lkjasd lkjasd dlkajs lkjasd lkjasd dlkajs lkjasd lkjasd dlkajs lkjasd lkjasd dlkajs lkjasd lkjasd dlkajs lkjasd lkjasd dlkajs lkjasd  lkjasd dlkajs lkjasd  lkjasd dlkajs lkjasd  lkjasd dlkajs lkjasd  lkjasd dlkajs lkjasd  lkjasd dlkajs lkjasd</p>
+             
+         </div>
+         <button class="updateButton">
+             Update
+             <i class="fa fa-pencil-square" aria-hidden="true"></i>
+         </button>
+     </div>
+-->
+  

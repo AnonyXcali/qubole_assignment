@@ -23,12 +23,12 @@ html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquot
      width:100%;
      display:grid;
      grid-template-rows: repeat(100,20px);
-grid-template-columns: repeat(64,20px);
-     
+grid-template-columns: repeat(64,20px);   
 }   
     .appName{
         grid-row:4/8;
     grid-column: 6/10;
+        
     }
 .appName h1{
     /* NotePad App: */
@@ -44,6 +44,123 @@ color: #11DC42;
         grid-row:10/10;
         grid-column: 14/20;
     }
+    
+    #titleTextArea{
+    height:50px;
+    width:521px;
+    border: 2px solid #d4d4d4;
+    border-radius: 6.5%;
+    padding: 10px 10px 10px 10px;
+    font-size: 20px;
+    resize: none;
+        grid-row: 13/16;
+        grid-column: 6/8;
+    }
+    
+    #textArea{
+       height: 300px;
+width: 521px;
+grid-row: 16/27;
+grid-column: 6/8;
+border: 2px solid #d4d4d4;
+border-radius: 6.5%;
+padding: 10px 10px 10px 10px;
+font-size: 20px;
+resize: none;
+    }
+
+    input {
+    padding: 0 0 400px 0;
+}
+    #crtNew{
+        /* Rectangle 2: */
+background: #11DC42;
+box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+border-radius: 11px;
+height:50px;
+width:150px;
+grid-row:32/35;
+grid-column: 6/15;
+color:white;
+            font-family: 'Montserrat', sans-serif;
+
+font-size:15px;
+
+    }
+    
+    #updTExst{
+        background: grey;
+box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+border-radius: 11px;
+height:50px;
+width:150px;
+grid-row:32/35;
+grid-column: 15/23;
+color:white;
+    font-family: 'Montserrat', sans-serif;
+
+font-size:15px;    
+    }
+    #noteBox{
+        overflow: scroll;
+        display: flex;
+        width:600px;
+        height:600px;
+        grid-column:33/44;
+        grid-row:5/38;
+        flex-wrap: wrap;
+        justify-content: center;
+    } 
+
+    .notes{
+        display:grid;
+        height:250px;
+        width:170px;
+        border:2px solid #666565;
+        margin-left:20px;
+        border-radius: 6.5%;
+        grid-template-rows: repeat(12,21px);
+        grid-template-columns: repeat(8,21px);
+    }
+    
+    .title{
+        grid-row:1/2;
+        text-align: center;
+        text-overflow: clip;
+        color:black;
+                grid-column: 1/12;
+
+    }
+    
+    .updateButton{  
+        height:34px;
+        width:70%;
+        grid-row:11/12;
+        grid-column: 3/12;
+        border-radius:7%;
+        background: #11DC42;
+            font-family: 'Montserrat', sans-serif;
+        color:white;
+        }
+    
+    .contentArea{
+        grid-row: 3/10;
+        grid-column: 1/10;
+        text-align: left;
+        font-size:13px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        
+    }
+    .paraNode{
+    height: 147px;
+      width: 171px;
+      background: whitesmoke;
+       border-top: 1px solid;
+        border-bottom: 1px solid;
+    }
+    
+    
     
 }
 
