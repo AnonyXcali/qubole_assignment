@@ -317,16 +317,15 @@ font-size:15px;
     }
     
     .updateButton{ 
-                display:none;
 
-        height:34px;
-        width:70%;
-        grid-row:11/12;
-        grid-column: 3/12;
-        border-radius:7%;
+        height: 34px;
+        width: 75%;
+        grid-row: 11/12;
+        grid-column: 2/12;
+        border-radius: 7%;
         background: #11DC42;
-            font-family: 'Montserrat', sans-serif;
-        color:white;
+        font-family: 'Montserrat', sans-serif;
+        color: white;
         }
     
     .contentArea{
