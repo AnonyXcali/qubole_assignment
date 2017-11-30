@@ -32,7 +32,7 @@ function enableNoteButton(){
     
     for(var i=0;i<noteBtnEn.length;i++){
         noteBtnEn[i].disabled = false;
-          noteBtn[i].style.cssText = "background-color:#11DC42;"
+          noteBtnEn[i].style.cssText = "background-color:#11DC42;"
     }
     
 }
