@@ -37,6 +37,9 @@ function enableNoteButton(){
     
 }
 
+
+
+
 updateBtn.addEventListener("click",function(){
 
   var currentTitle = textContentTitle.value;
@@ -64,8 +67,10 @@ createNewNote.addEventListener("click",function(){
       alert("Please enter something!");
       return -1;
     }
-  
-    var new_div = createNode("div");
+    
+ {
+  if (confirm("Add Note?") == true) {
+     var new_div = createNode("div");
     new_div.setAttribute("class","notes");
     new_div.setAttribute("id","newBox"+count);
     // new_div.innerHTML = storeTextContent;  
@@ -103,6 +108,13 @@ createNewNote.addEventListener("click",function(){
     append(noteBoxArea,new_div);
     count++;
     
+  } else {
+    return -1;
+  }
+}
+  
+    
+   
      
  
 });
