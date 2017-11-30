@@ -50,8 +50,9 @@ updateBtn.addEventListener("click",function(){
   currentNode.children[2].children[0].innerText = currentText;
   currentNode.children[0].children[0].innerText = 
     currentTitle;
-enableNoteButton()
-  clearAll();
+enableNoteButton();
+enableCreateNoteBtn();
+    clearAll();
   updateBtn.disabled = true;
         updateBtn.style.cssText ="background-color:grey;"
 
