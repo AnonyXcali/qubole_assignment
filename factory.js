@@ -37,7 +37,10 @@ function enableNoteButton(){
     
 }
 
-
+function enableCreateNoteBtn(){
+    createNewNote.disabled = false;
+    createNewNote.style.cssText = "background-color:#11DC42;"
+}
 
 
 updateBtn.addEventListener("click",function(){
@@ -128,6 +131,8 @@ function jsFunction(sender){
       textContentTitle.value = tr.children[0].children[0].innerText;
       
       updateBtn.disabled=false;
+      createNewNote.disabled = true;
+     createNewNote.style.cssText = "background-color:grey";
      updateBtn.style.cssText ="background-color:#11DC42;"
       thatParticularNote(tr);
     for(var i=0;i<noteBtn.length;i++){
