@@ -27,6 +27,15 @@ function clearAll(){
     textContentTitle.value ="";
 }
 
+function enableNoteButton(){
+    var noteBtnEn = document.getElementsByClassName("updateButton");
+    
+    for(var i=0;i<noteBtnEn.length;i++){
+        noteBtnEn[i].disabled = false;
+          noteBtn[i].style.cssText = "background-color:#11DC42;"
+    }
+    
+}
 
 updateBtn.addEventListener("click",function(){
 
@@ -34,7 +43,8 @@ updateBtn.addEventListener("click",function(){
   var currentText = textContent.value;
   currentNode.children[2].children[0].innerText = currentText;
   currentNode.children[0].children[0].innerText = 
-      currentTitle;
+    currentTitle;
+enableNoteButton()
   clearAll();
   updateBtn.disabled = true;
         updateBtn.style.cssText ="background-color:grey;"
@@ -101,12 +111,17 @@ createNewNote.addEventListener("click",function(){
 
 function jsFunction(sender){
         var tr = sender.parentNode;
+        var noteBtn = document.getElementsByClassName("updateButton");
       textContent.value = tr.children[2].children[0].innerText;
       textContentTitle.value = tr.children[0].children[0].innerText;
       
       updateBtn.disabled=false;
      updateBtn.style.cssText ="background-color:#11DC42;"
       thatParticularNote(tr);
+    for(var i=0;i<noteBtn.length;i++){
+        noteBtn[i].disabled = true;
+        noteBtn[i].style.cssText = "background-color:grey;"
+    }
               
 }
 
